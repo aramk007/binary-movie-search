@@ -1,0 +1,118 @@
+/* App.css */
+
+.app {
+  padding: 20px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.search-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.search-input {
+  width: 441px;
+  height: 48px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.select-input {
+  width: 113px;
+  height: 48px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.movie-details {
+  margin-top: 20px;
+}
+
+.movie-rating .star,
+.review-rating .star {
+  font-size: 1.5em;
+  color: #ffd700;
+}
+
+.star.filled {
+  color: #ffd700;
+}
+
+.star {
+  color: #e0e0e0;
+}
+
+.react-select__control {
+  width: 113px; /* Initial width */
+  height: 48px;
+  font-size: 14px;
+}
+
+.react-select__control--is-focused {
+  width: 239px; /* Expanded width on focus */
+}
+
+.react-select__menu {
+  width: 239px; /* Dropdown width */
+  max-height: 303px; /* Dropdown height */
+}
+
+.autocomplete-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 441px; /* Match search input width */
+  position: absolute;
+  z-index: 1;
+}
+
+.autocomplete-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.autocomplete-item:hover {
+  background-color: #f0f0f0;
+}
+/* container around the input fields */
+.filter-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-container {
+  flex: 1;
+}
+/* mobile styles */
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+  .search-input {
+    width: 400px !important;
+  }
+
+  .search-container,
+  .react-select__control {
+    width: calc(100% - 20px);
+  }
+}
