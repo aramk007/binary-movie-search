@@ -44,21 +44,21 @@
 
 @media (max-width: 768px) {
   .autocomplete-list {
-    max-height: 300px; /* Adjust height for mobile view */
-    width: calc(100% - 20px); /* Adjust width for mobile view */
-    max-width: 95vw;
+    max-height: 300px;
+    width: calc(100% - 20px);
+    max-width: 85vw;
   }
 
   .autocomplete-item-header {
-    flex-direction: column; /* Stack title and genre vertically on mobile */
+    flex-direction: column;
     align-items: flex-start;
   }
 
   .autocomplete-genre {
-    margin-top: 4px; /* Add some space between title and genre */
+    margin-top: 4px;
   }
 
   .autocomplete-rating {
-    margin-top: 4px; /* Add some space between genre and rating */
+    margin-top: 4px;
   }
 }
