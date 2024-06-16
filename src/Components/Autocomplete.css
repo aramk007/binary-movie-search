@@ -1,0 +1,39 @@
+.autocomplete-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  position: absolute;
+}
+
+.autocomplete-item {
+  display: flex;
+  flex-direction: column; /* Change to column to stack elements */
+  padding: 8px;
+  cursor: pointer;
+}
+
+.autocomplete-item:hover {
+  background-color: #f0f0f0;
+}
+
+.autocomplete-item-header {
+  display: flex;
+  justify-content: space-between; /* Space between for title and genre */
+  width: 100%;
+}
+
+.autocomplete-rating {
+  display: flex;
+}
+
+.star {
+  color: #e0e0e0;
+}
+
+.star.filled {
+  color: #ffd700;
+}
