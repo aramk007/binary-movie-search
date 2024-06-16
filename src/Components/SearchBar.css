@@ -1,0 +1,17 @@
+/* SearchBar.css */
+
+input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.autocomplete-list {
+  position: absolute;
+  width: 100%;
+}
+.search-input {
+  height: 48px !important;
+}
