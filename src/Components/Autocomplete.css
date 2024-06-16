@@ -1,3 +1,5 @@
+/* Autocomplete.css */
+
 .autocomplete-list {
   list-style-type: none;
   padding: 0;
@@ -7,6 +9,8 @@
   overflow-y: auto;
   width: 100%;
   position: absolute;
+  background-color: white; /* Ensure background color is white */
+  z-index: 1; /* Ensure the dropdown appears above other elements */
 }
 
 .autocomplete-item {
@@ -36,4 +40,25 @@
 
 .star.filled {
   color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .autocomplete-list {
+    max-height: 300px; /* Adjust height for mobile view */
+    width: calc(100% - 20px); /* Adjust width for mobile view */
+    max-width: 95vw;
+  }
+
+  .autocomplete-item-header {
+    flex-direction: column; /* Stack title and genre vertically on mobile */
+    align-items: flex-start;
+  }
+
+  .autocomplete-genre {
+    margin-top: 4px; /* Add some space between title and genre */
+  }
+
+  .autocomplete-rating {
+    margin-top: 4px; /* Add some space between genre and rating */
+  }
 }
