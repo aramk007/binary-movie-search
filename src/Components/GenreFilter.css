@@ -1,0 +1,55 @@
+/* GenreFilter.css */
+
+.react-select__control {
+  width: 113px;
+  min-height: 48px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+  font-family: "DM Sans";
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+}
+
+.react-select__control--is-focused {
+  width: 113px;
+}
+
+.react-select__menu {
+  width: 126px;
+  height: 151px;
+  overflow-y: hidden;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* Adjust font size to 14px */
+  padding: 0px 0px; /* Adjust padding to control gap between star sets */
+  margin: 0px;
+}
+
+.option-container input[type="checkbox"] {
+  margin-right: 4px;
+  width: 12px; /* Adjust this line to control checkbox width */
+  height: 12px; /* Adjust this line to control checkbox height */
+}
+
+.option-container label {
+  white-space: nowrap;
+}
+
+.dropdown-chevron {
+  width: 14.14px;
+  height: 8.49px;
+  margin-top: 7.76px;
+  margin-left: 4.93px;
+}
