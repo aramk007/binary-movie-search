@@ -7,6 +7,9 @@ h1 {
   display: flex;
   justify-content: center;
 }
+.testing {
+  display: block;
+}
 
 .search-filters {
   display: flex;
