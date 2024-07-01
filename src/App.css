@@ -8,7 +8,7 @@ h1 {
   justify-content: center;
 }
 .testing {
-  display: inline-block;
+  display: block;
 }
 
 .search-filters {
